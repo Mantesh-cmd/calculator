@@ -116,7 +116,7 @@ public class CalculatorTest extends Mockito{
 
 
     
-    //@Test
+    @Test
     public void testSub() throws Exception {
 
         int k= new Calculator().sub(8,7);
@@ -124,7 +124,7 @@ public class CalculatorTest extends Mockito{
 
     }
     
-    //@Test
+    @Test
     public void testMul() throws Exception {
 
         int k= new Calculator().mul(8,6);
@@ -132,7 +132,7 @@ public class CalculatorTest extends Mockito{
 
     }
 
-    //@Test
+    @Test
     public void testDiv() throws Exception {
 
         int k= new Calculator().div(8,4);
