@@ -9,25 +9,25 @@ pipeline {
     
   stage('Code Review') {
     steps{
-     sh 'mvn clean pmd:pmd'
+       sh 'mvn clean pmd:pmd'
     }
    }
 
-    stage('Unit Test') {
-      steps{
-        sh 'mvn clean test'
+  stage('Unit Test') {
+    steps{
+       sh 'mvn clean test'
       }
     }
     
-    stage('Code Coverage') {
-      steps{ 
-        sh 'mvn clean cobertura:check'
+  stage('Code Coverage') {
+    steps{ 
+       sh 'mvn clean cobertura:check'
      }
     }
 
-    stage('Package') {
-      steps{
-        sh 'mvn clean package'
+  stage('Package') {
+    steps{
+       sh 'mvn clean package'
       }
     }
   }
