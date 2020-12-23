@@ -111,7 +111,7 @@ public class CalculatorTest extends Mockito{
         new Calculator().doGet(request, response);
         
         writer.flush(); // it may not have been flushed yet...
-        System.out.print(stringWriter.toString());
+        System.out.print(stringWriter.toString()) ;
     }
 
 
